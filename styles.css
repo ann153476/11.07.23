@@ -20,6 +20,9 @@ body {
   max-width: 100%;
 }
 /* for all tags */
+p {
+  margin: 0px 0px 10px;
+}
 body {
   line-height: 1.42857;
 }
@@ -359,7 +362,7 @@ hr {
   font-size: 21px;
 }
 .site-info .site-info-description {
-  margin: 20px 0px;
+  padding: 20px 0px;
 }
 .site-info .site-info-title h3 {
   color: rgb(145, 145, 145);
@@ -417,7 +420,6 @@ hr {
   font-size: 16px;
 }
 .with-seperator:not(:last-child) {
-  padding-bottom: 20px;
   border-bottom: 1px dotted rgb(61, 59, 62);
 }
 .contact-list > li a i {
@@ -466,6 +468,13 @@ hr {
   color: rgb(115, 115, 115);
 }
 /* foooter hover */
+.hover-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hover-list > li + li {
+  margin-left: 10px;
+}
 .hover-list li {
   position: relative;
 }
@@ -481,4 +490,31 @@ hr {
 }
 .hover-list > li:hover > picture:last-child {
   opacity: 1;
+}
+.supported-browser-container {
+  display: flex;
+  justify-content: flex-end;
+}
+/* boxes */
+.provider-container {
+  border-color: rgb(61, 59, 62);
+  display: inline-block;
+  width: auto;
+  position: relative;
+  vertical-align: top;
+  padding: 15px;
+  margin: 20px 10px 0px 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-radius: 5px;
+}
+.provider-container > h5 {
+  color: rgb(115, 115, 115);
+  background-color: rgb(14, 14, 14);
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 17px;
+  padding: 0px 10px;
 }
