@@ -140,12 +140,6 @@ a:active {
   padding-right: 15px;
   padding-left: 15px;
 }
-@media (min-width: 992px) {
-  .col-md-12 {
-    width: 100%;
-  }
-}
-
 .row {
   margin-right: -15px;
   margin-left: -15px;
@@ -265,22 +259,32 @@ a:active {
 }
 @media (min-width: 992px) {
   .col-md-8 {
-    width: 66.66666666666666%;
-    .col-md-1,
-    .col-md-2,
-    .col-md-3,
-    .col-md-4,
-    .col-md-5,
-    .col-md-6,
-    .col-md-7,
-    .col-md-8,
-    .col-md-9,
-    .col-md-10,
-    .col-md-11 {
-      float: left;
-    }
+    width: 66.6667%;
+  }
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-5 {
+    width: 41.6667%;
+  }
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11 {
+    float: left;
   }
 }
+
 .footer-links,
 .copyright {
   margin-bottom: 15px;
@@ -305,11 +309,6 @@ a:active {
 .copyright {
   color: rgb(115, 115, 115);
   text-align: right;
-}
-@media (min-width: 992px) {
-  .col-md-4 {
-    width: 33.33333333333333%;
-  }
 }
 hr {
   margin-top: 20px;
