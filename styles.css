@@ -1,6 +1,9 @@
 .red {
   border: 1px solid red;
 }
+body {
+  background-color: red;
+}
 /* utils */
 *,
 *:before,
@@ -17,8 +20,12 @@
   max-width: 100%;
 }
 /* for all tags */
-div {
-  display: block;
+body {
+  line-height: 1.42857;
+}
+ul,
+ol {
+  list-style: none;
 }
 .btn {
   margin-bottom: 0;
@@ -34,7 +41,9 @@ img {
 }
 a {
   outline: none;
+  text-decoration: none;
   color: #fbeb8f;
+  transition: all 0.3s ease;
 }
 
 a,
@@ -42,31 +51,12 @@ a:hover,
 a:active {
   text-decoration: none;
 }
-a {
-  outline: none;
-  transition: all 0.3s ease;
-}
 /* container */
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-  }
 }
 .container:before,
 .container:after {
@@ -76,6 +66,23 @@ a {
 .container:after {
   clear: both;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
 /* utils */
 .col-xs-1,
 .col-xs-2,
@@ -130,7 +137,7 @@ a {
   padding-right: 15px;
   padding-left: 15px;
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .col-md-12 {
     width: 100%;
   }
@@ -140,14 +147,15 @@ a {
   margin-right: -15px;
   margin-left: -15px;
 }
+.row:after {
+  clear: both;
+}
 .row:before,
 .row:after {
   display: table;
   content: " ";
 }
-.row:after {
-  clear: both;
-}
+
 /* images url */
 .background {
   background-image: url(//nx-cdn.trgwl.com/Images/nexus-alpha/dark-gold/desktop/home/download-apk-background.jpg?v=20230711-1);
@@ -161,7 +169,6 @@ a {
 .download-apk {
   display: flex;
   align-items: center;
-  font-family: Arial;
   color: #fff;
 }
 .download-apk > div {
@@ -171,7 +178,6 @@ a {
 }
 /* second block */
 .download-apk h2 {
-  font-family: Arial;
   text-transform: uppercase;
   font-weight: 100;
   font-size: 35px;
@@ -244,4 +250,233 @@ a {
   color: #f69c00;
   font-style: normal;
   display: block;
+}
+/* footer */
+.site-footer {
+  border-top-color: #101010;
+  background: #0d0d0d;
+}
+
+.site-footer {
+  padding: 20px 0;
+}
+@media (min-width: 992px) {
+  .col-md-8 {
+    width: 66.66666666666666%;
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11 {
+      float: left;
+    }
+  }
+}
+.footer-links,
+.copyright {
+  margin-bottom: 15px;
+}
+.footer-links > li {
+  display: inline-block;
+}
+.footer-links > li > a {
+  color: rgb(115, 115, 115);
+  cursor: pointer;
+  display: block;
+  padding-right: 10px;
+  line-height: 20px;
+}
+.footer-links > li + li > a {
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+.footer-links > li > a:hover {
+  color: rgb(251, 235, 143);
+}
+.copyright {
+  color: rgb(115, 115, 115);
+  text-align: right;
+}
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+hr {
+  height: 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.footer-separator {
+  padding: 15px 0 0;
+  margin: 15px 0 0;
+  border-top: 1px dotted #3d3b3e;
+}
+.site-description a {
+  color: #666;
+}
+.site-description {
+  color: #3d3b3e;
+}
+/* ////////////////table////////////////////////// */
+.site-info-container:not(:last-child) {
+  padding-right: 40px;
+}
+.site-info .site-info-title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 15px 0px;
+  border-bottom: 1px dotted rgb(61, 59, 62);
+}
+/* icons */
+.i-service {
+  background-image: url(./img/icon-sprite.png);
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.i-service-PRODUK {
+  background-position-y: -48px;
+}
+.i-service-BANTUAN {
+  background-position-y: -97px;
+}
+/*  */
+.site-info .site-info-title h3 {
+  font-size: 21px;
+}
+.site-info .site-info-description {
+  margin: 20px 0px;
+}
+.site-info .site-info-title h3 {
+  color: rgb(145, 145, 145);
+}
+.site-info .site-info-description p,
+.site-info .site-info-title p {
+  color: rgb(109, 109, 109);
+}
+.site-info .site-info-description h5 {
+  color: rgb(153, 153, 153);
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+.site-info .site-info-description p {
+  font-size: 12px;
+  line-height: 20px;
+}
+/* чорточки */
+.progressbar {
+  background: rgb(36, 34, 35);
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 5px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px inset;
+}
+.proggress {
+  background: rgb(115, 115, 115);
+  height: 10px;
+  border-radius: 6px;
+}
+#deposit_progress .proggress {
+  width: 5%;
+}
+#withdrawal_progress .proggress {
+  width: 30%;
+}
+.site-info .site-info-description .percentCount {
+  transform: translateY(-20px);
+}
+.percentCount {
+  color: rgb(115, 115, 115);
+}
+.percentCount {
+  float: right;
+  margin-top: 10px;
+  clear: both;
+  font-size: 44px;
+  font-family: digital_sans_ef_medium;
+  position: absolute;
+  right: 0px;
+  top: -50px;
+}
+.percentCount span {
+  font-size: 16px;
+}
+.with-seperator:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted rgb(61, 59, 62);
+}
+.contact-list > li a i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: rgb(212, 175, 72);
+  background: rgb(185, 163, 83);
+}
+.contact-list > li a i img {
+  height: 50%;
+  width: 50%;
+}
+.qr-codes,
+.contact-list {
+  flex: 1 1 0%;
+}
+.support-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.site-info .site-info-description ul li {
+  color: rgb(0, 38, 254);
+}
+.contact-list > li {
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+/*  */
+.contact-list > li a {
+  color: rgb(251, 235, 143);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 20px;
+  background: rgb(10, 10, 10);
+  border-radius: 30px;
+}
+.footer-section-title {
+  color: rgb(115, 115, 115);
+}
+/* foooter hover */
+.hover-list li {
+  position: relative;
+  transition: opacity 0.5s ease 0s;
+}
+
+.hover-list picture:last-child {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+.hover-list > li:hover > picture:last-child {
+  opacity: 1;
 }
