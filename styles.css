@@ -1,10 +1,7 @@
-.red {
-  border: 1px solid red;
-}
-body {
-  background-color: red;
-}
 /* utils */
+html {
+  text-size-adjust: 100%;
+}
 *,
 *:before,
 *:after {
