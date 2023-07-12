@@ -225,28 +225,17 @@ a:active {
 /* btn */
 .download-apk .btn {
   color: #000;
-  background: #f8e689;
-  background: linear-gradient(to bottom, #f8e689 0%, #bf8e20 100%);
+  background: linear-gradient(rgb(248, 230, 137) 0%, rgb(191, 142, 32) 100%);
   border: none;
-}
-
-.download-apk .btn {
   font-weight: 600;
   display: block;
   padding: 3px;
   border-radius: 20px;
   text-align: center;
-  background: #f69c00;
-  background: linear-gradient(to bottom, #f69c00 0%, #d17601 100%);
-  border: none;
 }
 .download-apk-section i {
-  color: #b18f34;
-}
-.download-apk-section i {
-  color: #f69c00;
+  color: rgb(177, 143, 52);
   font-style: normal;
-  display: block;
 }
 /* footer */
 .site-footer {
