@@ -476,8 +476,8 @@ hr {
 .hover-list li {
   position: relative;
 }
-.hover-list > li > img:last-child,
-.hover-list > li > img:last-child {
+.hover-list > li img:last-child,
+.hover-list > li img:last-child {
   transition: opacity 0.5s ease 0s;
 }
 .hover-list img:last-child {
@@ -486,7 +486,7 @@ hr {
   top: 0px;
   opacity: 0;
 }
-.hover-list > li:hover > img:last-child {
+.hover-list > li:hover img:last-child {
   opacity: 1;
 }
 .supported-browser-container {
