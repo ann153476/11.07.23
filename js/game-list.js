@@ -18,7 +18,7 @@ let gameItems = document.querySelectorAll(".game-item");
 let imageCount = gameImages.length;
 let usedImages = [];
 function getRandomImageIndex(imageCount, usedImages) {
-  var randomIndex = Math.floor(Math.random() * imageCount);
+  let randomIndex = Math.floor(Math.random() * imageCount);
   if (usedImages.length === imageCount) {
     usedImages = [];
   }
