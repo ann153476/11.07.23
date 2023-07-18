@@ -38,3 +38,4 @@ window.addEventListener("DOMContentLoaded", function () {
     ].style.backgroundImage = `url(./img/popular-game-list/${gameImages[randomImageIndex]}.webp)`;
   }
 });
+console.log(usedImages);
