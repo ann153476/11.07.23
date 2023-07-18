@@ -13,7 +13,6 @@
   height: 100%;
 }
 .game-item {
-  background-image: url(../img/popular-game-list/vs1024mahjpanda.webp);
   background-size: cover;
   width: 33.333%;
   flex-basis: calc(33.333% - 10px);
