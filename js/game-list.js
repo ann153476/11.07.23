@@ -35,6 +35,6 @@ window.addEventListener("DOMContentLoaded", function () {
     let randomImageIndex = getRandomImageIndex(imageCount, usedImages);
     gameItems[
       i
-    ].style.backgroundImage = `url(../img/popular-game-list/${gameImages[randomImageIndex]}.webp)`;
+    ].style.backgroundImage = `url(./img/popular-game-list/${gameImages[randomImageIndex]}.webp)`;
   }
 });
