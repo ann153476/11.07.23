@@ -1,6 +1,7 @@
+let id = 0;
+//
 const winnersTicker = document.querySelector(".winners-ticker");
 
-const winnerName = "name*****";
 const generateIDR = () => {
   return (Math.random() * (5000 - 1000) + 1000).toFixed(2);
 };
@@ -17,19 +18,21 @@ const generateWinersInfo = () => {
               gameImg[Math.trunc(Math.random() * (3 - 0) + 0)]
             }.webp" alt="starpr" />
             <div class="winner-info">
-              <p class="name">${winnerName}</p>
+              <p class="name">name***${id}</p>
               <p>IDR <span>${generateIDR()}</span></p>
               <p>${playGame[Math.trunc(Math.random() * (3 - 0) + 0)]}</p>
             </div>
           </li>`;
+  id++;
   return markup;
 };
 
 function printWinersInfo() {
   let winnerArr = document.querySelectorAll("#winner-id");
-  winnerArr[1].remove();
+
   console.log(winnerArr);
   winnersTicker.insertAdjacentHTML("beforeend", generateWinersInfo());
+  winnerArr[0].remove();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
