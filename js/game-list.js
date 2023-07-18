@@ -5,7 +5,7 @@ const gameImages = [
   "vs20gatotgates",
   "vs20nexussr",
   "vs25tigeryear",
-  "vs25tigeryear",
+  "vs50safariking",
   "vs243mwarrior",
   "vs1024mahjpanda",
   "vswayschilheat",
