@@ -28,19 +28,10 @@ const generateWinersInfo = () => {
 
 function printWinersInfo() {
   let winnerArr = document.querySelectorAll("#winner-id");
-
-  // for (let i = 0; i < winnerArr.length; i++) {
-  //   winnerArr[
-  //     i
-  //   ].style.transform = `translateY(-${winnerArr[i].clientHeight}px)`;
-  //   console.log(winnerArr[i].clientHeight);
-  // }
-
   winnersTicker.insertAdjacentHTML("beforeend", generateWinersInfo());
   winnerArr[0].remove();
-  winnersTicker.style.transform = `translateY(-70px)`;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  setInterval(printWinersInfo, 5000);
+  setInterval(printWinersInfo, 4000);
 });
