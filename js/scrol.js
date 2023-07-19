@@ -1,4 +1,3 @@
-//
 const winnersTicker = document.querySelector(".winners-ticker");
 
 const generateIDR = () => {
@@ -10,7 +9,7 @@ const playGame = [
   "Gates of Gatot Kaca",
 ];
 const gameImg = ["vs20gatotgates", "vsprg20starpr", "vs20olympgate"];
-let idName = 5;
+let idName = 4;
 const generateWinersInfo = () => {
   let markup = `<li id="winner-id">
             <img src="./img/jackpot-winners/${
@@ -31,10 +30,6 @@ function printWinersInfo() {
   winnersTicker.insertAdjacentHTML("beforeend", generateWinersInfo());
   winnerArr[0].remove();
 }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   setInterval(printWinersInfo, 4000);
-// });
 let winnersInterval;
 
 document.addEventListener("visibilitychange", function () {
@@ -49,7 +44,5 @@ document.addEventListener("visibilitychange", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // Початково запустити оновлення переможців
-  winnersInterval = setInterval(printWinersInfo, 4000);
+  winnersInterval = setInterval(printWinersInfo, 2000);
 });
-
-// Решта коду не змінено

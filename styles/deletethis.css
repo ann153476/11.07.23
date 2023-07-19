@@ -5,10 +5,10 @@
   height: 30px;
   font-size: 20px;
   color: rgb(183, 0, 255);
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   cursor: pointer;
   text-align: center;
   z-index: 9999;
+}
+.my-container {
+  display: flex;
 }
