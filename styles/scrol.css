@@ -20,7 +20,6 @@
   width: 16px;
   margin-right: 5px;
 }
-/*  */
 .winners-ticker-container {
   color: #fff;
   background-color: #050505;
@@ -31,7 +30,6 @@
   position: relative;
 }
 .winners-ticker {
-  /* border: 5px solid red; */
   position: absolute;
   top: 0;
   width: 100%;
@@ -45,7 +43,8 @@
   font-size: 12px;
   display: flex;
   align-items: center;
-  transition: all 2s linear;
+  transition-timing-function: linear;
+  transition-duration: 2s;
 }
 .winners-ticker span {
   color: #f8a201;
@@ -76,10 +75,10 @@
   top: 140px;
   background-color: rgba(255, 242, 0, 0.222);
 }
-.winners-ticker li:nth-child(5) {
+/* .winners-ticker li:nth-child(5) {
   top: 210px;
   background-color: rgba(255, 0, 217, 0.184);
-}
+} */
 body {
   background-color: rgb(31, 201, 244);
 }

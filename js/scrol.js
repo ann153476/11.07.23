@@ -32,6 +32,24 @@ function printWinersInfo() {
   winnerArr[0].remove();
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  setInterval(printWinersInfo, 4000);
+// document.addEventListener("DOMContentLoaded", function () {
+//   setInterval(printWinersInfo, 4000);
+// });
+let winnersInterval;
+
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "hidden") {
+    // Приховано - зупинити оновлення переможців
+    clearInterval(winnersInterval);
+  } else {
+    // Знову відображено - почати оновлення переможців
+    winnersInterval = setInterval(printWinersInfo, 4000);
+  }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Початково запустити оновлення переможців
+  winnersInterval = setInterval(printWinersInfo, 4000);
+});
+
+// Решта коду не змінено
